@@ -1,0 +1,27 @@
+Dataset: day2_sample.csv
+Rows: 250
+Training rows: 200
+Test rows: 50
+Features: temperature, pressure, vibration, rpm, current
+Target: state
+Accuracy: 0.940
+
+Classification report:
+                precision    recall  f1-score   support
+
+HIGH_VIBRATION       0.80      1.00      0.89         4
+  LOW_PRESSURE       1.00      1.00      1.00         5
+MOTOR_OVERLOAD       1.00      1.00      1.00         5
+        NORMAL       1.00      0.90      0.95        31
+   OVERHEATING       0.71      1.00      0.83         5
+
+      accuracy                           0.94        50
+     macro avg       0.90      0.98      0.93        50
+  weighted avg       0.96      0.94      0.94        50
+
+Feature importances:
+pressure: 0.254
+vibration: 0.253
+current: 0.250
+temperature: 0.243
+rpm: 0.000
